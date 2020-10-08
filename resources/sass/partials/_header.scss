@@ -1,0 +1,25 @@
+header {
+    height: $header-height;
+    background-color: $header-bgc;
+    border-bottom: 1px solid darken($header-bgc, 10%);
+
+    .container {
+        @include flex($dir: column, $justify: space-around, $align: center);
+    }
+
+    nav {
+        ul {
+            @include flex();
+            list-style: none;
+
+            li {
+                padding: 0 15px;
+
+                a {
+                    text-decoration: none;
+                    color: #001942;
+                }
+            }
+        }
+    }
+}
