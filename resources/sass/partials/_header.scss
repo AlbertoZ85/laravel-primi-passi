@@ -4,12 +4,16 @@ header {
     border-bottom: 1px solid darken($header-bgc, 10%);
 
     .container {
-        @include flex($dir: column, $justify: space-around, $align: center);
+        @include flex(column, space-evenly, center);
+
+        img {
+            height: 120px;
+        }
     }
 
     nav {
         ul {
-            @include flex();
+            @include flex;
             list-style: none;
 
             li {

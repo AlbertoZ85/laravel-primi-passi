@@ -1,0 +1,27 @@
+main {
+    .container {
+        @include container;
+        text-align: center;
+
+        section {
+            padding: 10px;
+
+            .cards {
+                @include flex($justify: center);
+                flex-wrap: wrap;
+
+                .card {
+                    @include flex(column, space-between, center);
+                    @include shadow;
+
+                    margin: 10px;
+                    background-color: white;
+
+                    img {
+                        max-width: 350px;
+                    }
+                }
+            }
+        }
+    }
+}
