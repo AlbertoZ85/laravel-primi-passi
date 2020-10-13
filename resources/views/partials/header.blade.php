@@ -5,9 +5,9 @@
         </h1>
         <nav>
             <ul>
-                <li><a href="{{route('home')}}">Home</a></li>
-                <li><a href="{{route('prodotti')}}">Prodotti</a></li>
-                <li><a href="{{route('contatti')}}">Contatti</a></li>
+                <li><a href="{{route('home')}}" class="{{url()->current() == route('home') ? 'active' : 'inactive'}}">Home</a></li>
+                <li><a href="{{route('prodotti')}}" class="{{url()->current() == route('prodotti') ? 'active' : 'inactive'}}">Prodotti</a></li>
+                <li><a href="{{route('contatti')}}" class="{{url()->current() == route('contatti') ? 'active' : 'inactive'}}">Contatti</a></li>
             </ul>
         </nav>
     </div>

@@ -22,6 +22,10 @@ header {
                 a {
                     text-decoration: none;
                     color: #001942;
+
+                    &.active {
+                        color: red; // cambia colore
+                    }
                 }
             }
         }

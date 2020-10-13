@@ -13,14 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
  */
 
-Route::get('/', function () {
-    return view('home');
-})->name('home');
+Route::get('/', 'StaticPageController@home')->name('home');
 
-Route::get('/prodotti', function () {
-    return view('prodotti');
-})->name('prodotti');
+Route::get('/prodotti', 'ProductController@products')->name('prodotti');
 
-Route::get('/contatti', function () {
-    return view('contatti');
-})->name('contatti');
+Route::get('/contatti', 'StaticPageController@contacts')->name('contatti');
+
+Route::get('/prodotti/show/{id}', 'ProductController@show')->name('show');
